@@ -1,0 +1,1 @@
+bool arithmetic(int a[],int &n);

@@ -1,0 +1,1 @@
+bool ascending(int a[],int &n);

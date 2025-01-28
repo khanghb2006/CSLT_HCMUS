@@ -1,0 +1,15 @@
+# Build with SDL2 library:
+#   .build sdl2
+# Build with platform-specific library (auto detection):
+#   .build
+
+if [ $# -gt 0 ] && [ "${1^^}" = "SDL2" ]; then
+  cflag=-D__sdl2__
+  lib=SDL2
+elif [ "$OS" == "Windows_NT" ]; then 
+  lib=gdi32
+else
+  lib=X11
+fi
+
+g++ src/*cpp -o bin/bmpdemo $cflag -l $lib

@@ -1,0 +1,1 @@
+bool symmetric(int a[],int &n);

@@ -1,0 +1,1 @@
+void right(int a[][200],int &n,int &m);

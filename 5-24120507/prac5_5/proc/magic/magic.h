@@ -1,0 +1,1 @@
+bool magic(int a[][200],int &n);
